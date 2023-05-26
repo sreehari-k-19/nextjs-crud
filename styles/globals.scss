@@ -1,5 +1,8 @@
+
+
 html,
 body {
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -14,3 +17,5 @@ a {
 * {
   box-sizing: border-box;
 }
+
+// background-image: radial-gradient(circle, #ff6935, #ff7b33, #ff8c32, #ff9c35, #feab3a);

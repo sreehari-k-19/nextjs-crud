@@ -1,0 +1,71 @@
+.leaf {
+  position: absolute;
+  top: -175px;
+  right: -135px;
+  z-index: 1;
+  animation: wind 2s ease-in-out infinite;
+}
+
+@keyframes wind {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-2deg);
+    transform: scale(1);
+  }
+  40% {
+    transform: rotate(1deg);
+  }
+  60% {
+    transform: rotate(-0.5deg);
+    transform: scale(0.999);
+  }
+  80% {
+    transform: rotate(0.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    transform: scale(1);
+  }
+}
+
+.leafflow {
+  width: 50px;
+  position: fixed;
+}
+.leafflow:nth-child(1) {
+  width: 40px;
+  right: 10%;
+  top: 10%;
+  animation: blowing 12s 1s linear infinite;
+}
+.leafflow:nth-child(2) {
+  width: 35px;
+  right: 12%;
+  top: 10%;
+  animation: blowing 6s linear infinite;
+}
+.leafflow:nth-child(3) {
+  width: 37px;
+  right: 14%;
+  top: 10%;
+  animation: blowing 9s 3s linear infinite;
+}
+@keyframes blowing {
+  0% {
+    transform: translate(10vw, 0) rotate(0);
+  }
+  20% {
+    transform: translate(5vw, 15vh) rotate(190deg);
+  }
+  65% {
+    transform: translate(7vw, 55vh) rotate(550deg);
+  }
+  80% {
+    transform: translate(8vw, 70vh) rotate(740deg);
+  }
+  100% {
+    transform: translate(9vw, 100vh) rotate(920deg);
+  }
+}
